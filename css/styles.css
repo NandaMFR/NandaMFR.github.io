@@ -257,7 +257,7 @@ h2 {
 
 @media (min-width: 320px) and (max-width: 700px) {
     ::-webkit-scrollbar {
-        width: 1px;
+        width: 0px;
         background-color: transparent;
     }
     .navbar {
