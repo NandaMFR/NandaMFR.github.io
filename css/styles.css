@@ -20,12 +20,10 @@ body, html {
     font-family: montserrat-regular;
     color: #21101E;
 }
-
-h2 {
-   font-family: montserrat-bold-lg;
-   font-size: 50px;
-   margin-bottom: 7%;
-   color: #543856;
+section, footer, header {
+    width: 100vw;
+    padding: 0;
+    margin: 0;
 }
 
 * {
@@ -35,62 +33,90 @@ h2 {
 }
 
 /**Header Style**/
-.navbar {
+.top-site > nav {
+    background-color: #433953;
     -webkit-box-shadow: 0px 15px 23px -6px rgba(0,0,0,0.63); 
     box-shadow: 0px 15px 23px -6px rgba(0,0,0,0.63);
     z-index: 1;
-    background-color: #543856;
 }
-    /**Social Icons Style**/
-    .navbar .social-btn{
-        margin-right: 7%;
-        padding: 0;
-    }
 
-    .social-btn .dropdown-twitter {
-        padding: 2px 0;
-        margin-right: 2%;
-    }
-    .social-btn .btn-icon {
-        border: none;
-        color: white;
-        margin: auto 2px;
-        font-size: 15px;
-        background-color: #543856;
-        width: 45px;
-        height: 45px;
-    }
-    
-    .social-btn button:hover {
-        background-color: #692244bb;
-        color: rgb(255, 255, 255);
-        cursor: pointer;
-    }
+.navbar-brand {
+    margin-left: 40px;
+}
 
-/**Buttons Style**/
-.itch-bg , .steam-bg {
-    padding: 0;
-    margin: 0;
-    height: 90vh;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
+.social-btn {
+    margin-right: 50px;
+}
+
+.social-btn button {
+    background-color: white;
     border: none;
-    border-collapse: collapse;
-}
-
-.itch-bg {
-    background-image: url(https://blogs.opovo.com.br/bancadoanime/wp-content/uploads/sites/59/2019/11/Overflow-Iretara-Ofureru-Ky%C5%8Ddai-no-Kimochi-GQCA-1.jpg);
-}
-
-.steam-bg {
-    background-image: url(https://pbs.twimg.com/profile_images/552457138866761728/DfNfulud.jpeg);
-}
-
-.itch-bg:hover , .steam-bg:hover {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 15px;
+    color: #433953;
     cursor: pointer;
-    filter:brightness(50%); 
+    margin: auto 10px;
 }
+
+.social-btn button:hover {
+    background-color: #f97f5e;
+    color: white;
+}
+
+/**Main Styles**/
+    /**Tabbu Banner**/
+    .tabbu-banner {
+        background-image: url(../img/banner.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 90vh;
+    }
+
+    .tabbu-banner .jumbotron {
+        clip-path: ellipse(62% 67% at 50% 30%);
+        margin-right: 70px;
+        font-family: montserrat-bold-lg;
+        text-align: center;
+        background-color: #433953;
+        color: white;
+    }
+
+    .tabbu-banner .jumbotron h2 {
+        margin-top: 20px;
+        font-size: 30px;
+    }
+
+    .steam-btn {
+        margin: 65px auto 20px auto;
+        width: 270px;
+        background-color: #ea5253;
+        border-radius: 70px;
+        cursor: pointer;
+        -webkit-box-shadow: 2px 2px 14px 4px rgba(0,0,0,0.37); 
+        box-shadow: 2px 2px 14px 4px rgba(0,0,0,0.37);
+    }
+
+    .steam-btn .fa-steam {
+        margin-left: 15px;
+        font-size: 70px;
+    }
+
+    .steam-btn-text {
+        text-align: center;
+    }
+
+    .steam-btn-text h5 {
+        margin: 20px auto;
+        font-size: 22px;
+    }
+
+    .steam-btn:hover {
+        background-color: white;
+        color: #433953;
+    }
     
 /**About Section**/
 .about-section {
@@ -191,15 +217,15 @@ h2 {
     border: none;
 }
 
-.itch-btn {
+.itch-btn-2 {
     background-color: #692244;
 }
 
-.steam-btn {
+.steam-btn-2 {
     background-color: #21101E;
 }
 
-.steam-btn:hover, .itch-btn:hover {
+.steam-btn-2:hover, .itch-btn:hover {
     background-color: #543856;
 }
 
@@ -259,20 +285,21 @@ h2 {
     ::-webkit-scrollbar {
         display: none;
     }
-    .navbar {
+    
+    .top-site > nav {
         text-align: center;
         justify-content: center;
-        background-color: #543856;
     }
 
-    .navbar .social-btn{
-        margin-right: 0;
-        background-color: #543856;
-    }
-
-    .social-btn .btn-icon {
+    .social-btn {
         margin: 0;
-    }  
+        margin-bottom: 10px;
+    }
+
+    .tabbu-banner .jumbotron {
+        margin: 0px;
+        margin-top: 60vh;
+    }
 
     .about-section {
         background-position: top;
@@ -331,6 +358,10 @@ h2 {
 
 /**Tablet**/
 @media (min-width:700px) and (max-width:1024px) {
+    .tabbu-banner {
+        height: 50vh;
+    }
+
     .girl-card {
         margin-left: 40px;
     }
@@ -339,9 +370,28 @@ h2 {
 
 /**Query**/
 @media (min-width:320px) and (max-width:1024px) {
-    .itch-bg , .steam-bg, .banner-section .col-md-6 {
-        height: 40vh;
-    }  
+    .tabbu-banner {
+        background-position: left;
+        background-size: auto 100%;
+    }
+
+    .tabbu-banner .jumbotron h2 {
+        font-size: 20px;
+    }
+
+    .steam-btn {
+        width: 100%;
+        margin: 50px auto;
+    }
+
+    .steam-btn .fa-steam {
+        font-size: 60px;
+    }
+
+    .steam-btn-text h5 {
+        margin: 20px auto;
+        font-size: 20px;
+    } 
 
     .girls-section h2 {
         text-align: center;
