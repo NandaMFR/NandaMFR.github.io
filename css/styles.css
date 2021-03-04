@@ -14,38 +14,45 @@ body, html {
     padding: 0;
 }
 
+h2 {
+    font-weight: 800;
+    font-size: 3rem;
+    padding-bottom: 2rem;
+}
+
 /**Header Style**/
-.top-site > nav {
-    background-color: #433953;
-    -webkit-box-shadow: 0px 15px 23px -6px rgba(0,0,0,0.63); 
-    box-shadow: 0px 15px 23px -6px rgba(0,0,0,0.63);
-    z-index: 1;
-}
+    /**NavBar**/
+    .top-site > nav {
+        background-color: #433953;
+        -webkit-box-shadow: 0px 15px 23px -6px rgba(0,0,0,0.63); 
+        box-shadow: 0px 15px 23px -6px rgba(0,0,0,0.63);
+        z-index: 1;
+    }
 
-.navbar-brand {
-    margin-left: 2rem;
-}
+    .navbar-brand {
+        margin-left: 2rem;
+    }
 
-.social-btn {
-    margin-right: 2.5rem;
-}
+    .social-btn {
+        margin-right: 2.5rem;
+    }
 
-.social-btn button {
-    background-color: white;
-    border: none;
-    border-radius: 50%;
-    width: 2rem;
-    height: 2rem;
-    font-size: 0.76rem;
-    color: #433953;
-    cursor: pointer;
-    margin: auto 0.5rem;
-}
+    .social-btn button {
+        background-color: white;
+        border: none;
+        border-radius: 50%;
+        width: 2rem;
+        height: 2rem;
+        font-size: 0.76rem;
+        color: #433953;
+        cursor: pointer;
+        margin: auto 0.5rem;
+    }
 
-.social-btn button:hover {
-    background-color: #f97f5e;
-    color: white;
-}
+    .social-btn button:hover {
+        background-color: #f97f5e;
+        color: white;
+    }
 
 /**Main Styles**/
     /**Tabbu Banner**/
@@ -54,7 +61,7 @@ body, html {
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-        height: 80vh;
+        height: 82vh;
     }
 
     .tabbu-banner .jumbotron {
@@ -66,9 +73,9 @@ body, html {
     }
     
     .tabbu-banner .jumbotron h2 {
-        font-weight: 800;
-        margin-top: 1rem;
+        padding-top: 1rem;
         font-size: 1.5rem;
+        padding-bottom: 0;
     }
 
     .steam-btn {
@@ -122,49 +129,35 @@ body, html {
         padding-bottom: 20px;
     }
 
-    .about-title h2 {
-        font-weight: 800;
-        font-size: 3rem;
-        padding-bottom: 20px;
-    }
-
     .about-title h3 {
         font-weight: 700;
         font-size: 1.25rem;
     }
 
-/**Features Section**/
-.features-section {
-    padding: 10% 3%;
-    text-align: center;
-    align-self: center;
-    justify-content: center;
-}
+    /**Features Section**/
+    .features-section {
+        padding: 5% 8%;
+        text-align: center;
+    }
 
-.first-row{
-    margin-bottom: 7%;
-}
+    .features-section h2 {
+        padding-bottom: 6rem;
+    }
 
-.features-item {
-    width: 100%;
-}
+    .feature-box {
+        height: 50%;
+        width: 100%;
+    }
 
-.features-icon  {
-    -webkit-box-shadow: 1px 2px 22px 1px rgba(108,39,86,0.5); 
-    box-shadow: 1px 2px 22px 1px rgba(108,39,86,0.5);
-    padding: 30px;
-    margin-bottom: 30px;
-    width: 160px;
-    height: 160px;
-    border-radius: 50%;
-    border: solid white 10px;
-    background: #746069;
-}
+    .feature-icon  {
+        margin-bottom: 1.5rem;
+        width: auto;
+        height: 8.5rem;
+    }
 
-.features-text {
-    color: #21101E;
-    width: 70%;
-}
+    .feature-text {
+        padding-bottom: 5rem;
+    }
 
 /**Girls Section**/
 .girls-section {
@@ -292,14 +285,14 @@ body, html {
         justify-content: center;
     }
 
-    .social-btn {
+    .social-btn, .navbar-brand {
         margin: 0;
         margin-bottom: 0.5rem;
     }
 
     .tabbu-banner .jumbotron {
         margin: 0px;
-        margin-top: 13.8rem;
+        margin-top: 40vh;
     }
 
     .about-section {
@@ -312,13 +305,6 @@ body, html {
         margin-top: 25rem;
     }
 
-    .features-item {
-        margin-bottom: 15%;
-    }
-
-    .features-section h2{
-        margin: 60px auto;
-    }
     .check-jumbotron h2 {
         font-size: 30px;
         padding-bottom: 20px;
@@ -355,6 +341,10 @@ body, html {
         -webkit-backdrop-filter: brightness(60%);
         backdrop-filter:brightness(60%);
         background-color: rgba(255, 255, 255, 0.555);
+    }
+
+    .feature-icon {
+        height: 5rem;
     }
 
     .girl-card {
@@ -419,8 +409,7 @@ body, html {
 
 /**Widescreen**/
 @media (min-width:1400px) {
-    .tabbu-banner {
-        height: 50vh;
+    .tabbu-banner .jumbotron h2 {
+        font-size: 2.3rem;
     }
-
 }
