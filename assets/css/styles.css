@@ -180,7 +180,7 @@ h3 {
 }
 
 .girl-icon {
-    width: 80%;
+    width: 70%;
     border-radius: 20px;
     margin-bottom: 2.5rem;
     -webkit-box-shadow: 2px 4px 21px -8px rgba(0, 0, 0, 0.507); 
@@ -348,9 +348,6 @@ h3 {
         height: 5rem;
     }
 
-    .girl-icon {
-        width: 50%;
-    }
 } 
 
 
