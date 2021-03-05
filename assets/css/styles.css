@@ -165,37 +165,35 @@ h3 {
         padding-bottom: 5rem;
     }
 
-/**Girls Section**/
-.girls-section {
-    text-align: center;
-    margin-bottom: 5%;
-}
+    /**Girls Section**/
+    .girls-section {
+        text-align: center;
+        margin: 5% auto;
+    }
 
-.girl-box {
-    margin: 2rem;
-}
+    .girl-box {
+        margin: 3rem 1rem;
+    }
 
-.girl-box h3, .girl-box h4 {
-    font-family: 'Lobster', cursive;
-}
+    .girl-box h3, .girl-box h4 {
+        font-family: 'Lobster', cursive;
+    }
 
-.girl-icon {
-    width: 70%;
-    border-radius: 20px;
-    margin-bottom: 2.5rem;
-    -webkit-box-shadow: 2px 4px 21px -8px rgba(0, 0, 0, 0.507); 
-    box-shadow: 2px 4px 21px -8px rgba(0,0,0,0.46);
-}
-
-.girls-section figcaption p {
-    margin-top: 1rem;
-}
-
+    .girl-icon {
+        width: 11rem;
+        border-radius: 20px;
+        margin-bottom: 2.5rem;
+        -webkit-box-shadow: 2px 4px 21px -8px rgba(0, 0, 0, 0.507); 
+        box-shadow: 2px 4px 21px -8px rgba(0,0,0,0.46);
+    }
 
 
 /**Jumbotron Section**/
+.check-jumbotron {
+    background-color: #f97f5e;
+}
 .check-jumbotron h2{
-    font-size: 40px;
+    color: white;
 }
 
 .check-jumbotron button {
@@ -221,15 +219,14 @@ h3 {
 
 /**Team Section**/
 
-.team-description {
-    font-size: 20px; 
-    padding: 90px 0 50px 90px; 
-    width: 60%;
-}
+    .team-description {
+        margin: 5rem auto;
+        width: 50%;
+    }
 
-.text-important {
-    font-family: montserrat-bold-lg;
-}
+    .text-important {
+        font-weight: 700;
+    }
 
 .team-card {
     padding-top: 40px;
@@ -315,10 +312,6 @@ h3 {
         width: 100%;
         margin: 15px 2px;
     }
-    .team-description { 
-        padding: 20px; 
-        width: 100%;
-    }
 
     .notes {
         padding: 90px 10px;
@@ -380,9 +373,9 @@ h3 {
         font-size: 2.5rem;
     }
 
-    .team-section h2 {
-        font-size: 35px;
-        padding-bottom: 20px;
+    .team-description {
+        width: 100%;
+        padding: 1rem;
     }
 
     .team-section h3 {
