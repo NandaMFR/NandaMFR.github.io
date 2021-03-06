@@ -15,11 +15,15 @@ body, html {
     padding: 0;
 }
 
-h2 {
+h1, h2, h3, h4, h5 {
     font-weight: 800;
+}
+
+h2 {
     font-size: 3rem;
     padding-bottom: 2rem;
     color: #433953;
+    /* text-transform: uppercase; */
 }
 
 h3 {
@@ -39,6 +43,11 @@ h3 {
         margin-left: 2rem;
     }
 
+    .navbar-brand img {
+        width: 20rem;
+        max-width: 100%
+    }
+
     .social-btn {
         margin-right: 2.5rem;
     }
@@ -47,9 +56,9 @@ h3 {
         background-color: white;
         border: none;
         border-radius: 50%;
-        width: 2rem;
-        height: 2rem;
-        font-size: 0.76rem;
+        width: 3rem;
+        height: 3rem;
+        font-size: 0.9rem;
         color: #433953;
         cursor: pointer;
         margin: auto 0.5rem;
@@ -67,26 +76,27 @@ h3 {
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-        height: 82vh;
+        height: 85vh;
     }
 
     .tabbu-banner .jumbotron {
-        clip-path: ellipse(62% 67% at 50% 30%);
-        margin-right: 3.5rem;
+        border-radius: 0 0 50% 50%;
+        height: fit-content;
+        margin-right: 3%;
         text-align: center;
         background-color: #433953;
         color: white;
     }
     
-    .tabbu-banner .jumbotron h2 {
-        padding-top: 1rem;
+    .tabbu-banner .jumbotron h4 {
+        padding-top: 15%;
         font-size: 1.5rem;
         padding-bottom: 0;
         color: white;
     }
 
     .steam-btn {
-        margin: 3rem auto 1.5rem auto;
+        margin: 2rem auto 1.5rem auto;
         width: 13.5rem;
         background-color: #ea5253;
         border-radius: 70px;
@@ -125,14 +135,14 @@ h3 {
     }
 
     .about-box {
-        padding: 40px;
+        padding: 2rem 1rem;
         text-align: left;
         background-color: white;
         border-radius: 15px;
     }
 
     .about-title {
-        padding-bottom: 20px;
+        padding-bottom: 1rem;
     }
 
     .about-title h3 {
@@ -171,17 +181,22 @@ h3 {
         margin: 5% auto;
     }
 
-    .girl-box {
+    .girl-box, .team-box {
         margin: 3rem 1rem;
     }
 
-    .girl-box h3, .girl-box h4 {
+    .girl-box h3, .girl-box h4,
+    .team-box h3 {
         font-family: 'Lobster', cursive;
+        font-weight: normal;
     }
 
     .girl-icon {
+        border-radius: 1rem;
+    }
+
+    .girl-icon, .team-avatar {
         width: 11rem;
-        border-radius: 20px;
         margin-bottom: 2.5rem;
         -webkit-box-shadow: 2px 4px 21px -8px rgba(0, 0, 0, 0.507); 
         box-shadow: 2px 4px 21px -8px rgba(0,0,0,0.46);
@@ -217,8 +232,7 @@ h3 {
     background-color: #543856;
 }
 
-/**Team Section**/
-
+    /**Team Section**/
     .team-description {
         margin: 5rem auto;
         width: 50%;
@@ -228,44 +242,33 @@ h3 {
         font-weight: 700;
     }
 
-.team-card {
-    padding-top: 40px;
-}
+    .team-box h3{
+        font-size: 1.8rem;
+    }
 
-.team-icon img {
-    width: 40%;
-    border-radius: 20px;
-}
+    .team-box h4 {
+        font-weight: normal;
+        font-size: 1rem;
+    }
 
-.team-text {
-    padding: 20px;
-    text-align: center;
-}
+    .team-avatar {
+        border-radius: 50%;
+    }
 
-.members-section h3 {
-    font-family: montserrat-medium;
-    font-size: 40px;
-    text-transform: uppercase;
-    margin: 50px auto;
-    padding: 40px 100px;
-}
+    /**Become Patreon**/
+    .become-patreon {
+        text-align: center;
+        background-color: transparent;
+    }
 
-.team-text h4 {
-    font-family: montserrat-medium;
-    font-size: 20px;
-}
-
-.team-text h5 {
-    font-size: 18px;
-}
-
-.notes {
-    font-size: 15px;
-    color: gray;
-    text-align: center;
-    padding: 100px 60px;
-}
-
+    /**Footer**/
+    .bottom-site {
+        font-size: 15px;
+        color: white;
+        text-align: center;
+        background-color: #433953;
+        padding: 3%;
+    }
 
 /**Smartphone**/
 @media  (max-width: 574px) {
@@ -273,19 +276,15 @@ h3 {
         display: none;
     }
     
-    .top-site > nav {
-        text-align: center;
-        justify-content: center;
-    }
-
-    .social-btn, .navbar-brand {
-        margin: 0;
-        margin-bottom: 0.5rem;
+    .social-btn button {
+        width: 2.5rem;
+        height: 2.5rem;
+        font-size: 0.8rem;
     }
 
     .tabbu-banner .jumbotron {
         margin: 0px;
-        margin-top: 40vh;
+        margin-top: 44vh;
     }
 
     .about-section {
@@ -303,8 +302,8 @@ h3 {
     }
 
     .check-jumbotron h2 {
-        font-size: 30px;
-        padding-bottom: 20px;
+        font-size: 1.5rem;
+        padding-bottom: 1rem;
     }
 
     .check-jumbotron button {
@@ -312,19 +311,11 @@ h3 {
         width: 100%;
         margin: 15px 2px;
     }
-
-    .notes {
-        padding: 90px 10px;
-    }
   
 }
 
 /**Tablet**/
 @media (min-width:574px) and (max-width:1024px) {
-    .tabbu-banner .jumbotron {
-        margin-right: 1rem;
-    }
-
     .about-section {
         background-size: 100% 100%;
         justify-content: center;
@@ -346,18 +337,28 @@ h3 {
 
 /**Tablet and Smartphone**/
 @media (min-width:320px) and (max-width:1024px) {    
-    .tabbu-banner {
-        background-position: left;
-        height: 50vh;
+    .top-site > nav {
+        text-align: center;
+        justify-content: center;
     }
 
-    .tabbu-banner .jumbotron h2 {
-        font-size: 25px;
+    .social-btn, .navbar-brand {
+        margin: 0;
+        margin-bottom: 0.5rem;
+    }
+
+    .tabbu-banner {
+        background-position: left;
+        height: 60vh;
+    }
+
+    .tabbu-banner .jumbotron h4 {
+        font-size: 1.2rem;
     }
     
     .about-section {
         margin-top: 0;
-        padding: 70px 30px;
+        padding: 3.5rem 1.5rem;
     }
 
     .about-box {
@@ -369,7 +370,7 @@ h3 {
         font-size: 1rem;
     }
 
-    .girls-section h2 {
+    .girls-section h2, .become-patreon h2  {
         font-size: 2.5rem;
     }
 
@@ -378,16 +379,11 @@ h3 {
         padding: 1rem;
     }
 
-    .team-section h3 {
-        padding: 0;
-        text-align: center;
-    }
-
 }
 
 /**Widescreen**/
 @media (min-width:1400px) {
-    .tabbu-banner .jumbotron h2 {
+    .tabbu-banner .jumbotron h4 {
         font-size: 2.3rem;
     }
 }
