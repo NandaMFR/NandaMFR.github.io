@@ -204,33 +204,37 @@ h3 {
 
 
 /**Jumbotron Section**/
-.check-jumbotron {
-    background-color: #f97f5e;
-}
-.check-jumbotron h2{
-    color: white;
-}
+    .check-jumbotron {
+        background-color: #f97f5e;
+    }
+    .check-jumbotron h2{
+        color: white;
+    }
 
-.check-jumbotron button {
-    font-weight: bold;
-    font-size: 25px;
-    width: 30%;
-    padding: 10px;
-    margin: 20px;
-    border: none;
-}
+    .check-jumbotron button {
+        background-color: black;
+        font-weight: bold;
+        border: none;
+        border-radius: 1rem;
+        width: 18rem;
+        max-width: 100%;
+        margin: 1rem;
+    }
+    
+    .check-icon-btn {
+        padding: 0.5rem;
+        font-size: 3rem;
+    }
 
-.itch-btn-2 {
-    background-color: #692244;
-}
+    .check-btn-text {
+        padding: 1rem;
+        padding-bottom: 0;
+        font-size: 1rem; 
+    }
 
-.steam-btn-2 {
-    background-color: #21101E;
-}
-
-.steam-btn-2:hover, .itch-btn:hover {
-    background-color: #543856;
-}
+    .check-btn-text span {
+        font-size: 1.5rem;
+    }
 
     /**Team Section**/
     .team-description {
@@ -261,6 +265,21 @@ h3 {
         background-color: transparent;
     }
 
+    .patreon-btn {
+        background-color: #FF424D;
+        color: white;
+        font-weight: 700;
+        font-size: 1.5rem;
+        cursor: pointer;
+        padding: 1.5rem 2rem;
+        border-radius: 70px;
+        border: none;
+    }
+
+    .patreon-btn:hover {
+        background-color: #433953;
+    }
+
     /**Footer**/
     .bottom-site {
         font-size: 15px;
@@ -284,7 +303,7 @@ h3 {
 
     .tabbu-banner .jumbotron {
         margin: 0px;
-        margin-top: 44vh;
+        margin-top: 40vh;
     }
 
     .about-section {
@@ -306,10 +325,15 @@ h3 {
         padding-bottom: 1rem;
     }
 
+
     .check-jumbotron button {
-        display: block;
-        width: 100%;
-        margin: 15px 2px;
+        margin: 0;
+        margin-bottom: 1rem;
+    }
+
+    .patreon-btn {
+        font-size: 1rem;
+        padding: 1rem;
     }
   
 }
@@ -349,7 +373,7 @@ h3 {
 
     .tabbu-banner {
         background-position: left;
-        height: 60vh;
+        height: 50vh;
     }
 
     .tabbu-banner .jumbotron h4 {
