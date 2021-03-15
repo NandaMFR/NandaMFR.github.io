@@ -17,7 +17,7 @@ h1, h2, h3, h4, h5 {
 }
 
 h2 {
-    font-size: 3rem;
+    font-size: 2.6rem;
     padding-bottom: 2rem;
     color: #433953;
     /* text-transform: uppercase; */
@@ -125,10 +125,13 @@ h3 {
     /**About Section**/
     .about-section {
         margin-top: 85px;
+    }
+    
+    .scene-box {
         background-image: url(../img/game_scenario.jpg);
         background-repeat: no-repeat;
-        background-size: 40% 100%;
-        background-position: left;
+        background-size: auto 100%;
+        background-position: center;
     }
 
     .about-box {
@@ -305,7 +308,7 @@ h3 {
 
     .about-section {
         background-position: top;
-        background-size: 25rem auto;
+        background-size: 47rem;
         background-color: #543856;
     }
 
@@ -339,7 +342,9 @@ h3 {
 @media (min-width:574px) and (max-width:1024px) {
     .about-section {
         background-size: 100% 100%;
+        background-position: center;
         justify-content: center;
+
     }
 
     .about-box {
@@ -379,6 +384,8 @@ h3 {
     .about-section {
         margin-top: 0;
         padding: 3.5rem 1.5rem;
+        background-image: url(../img/game_scenario.jpg);
+        background-repeat: no-repeat;
     }
 
     .about-box {
@@ -402,8 +409,23 @@ h3 {
 }
 
 /**Widescreen**/
-@media (min-width:1400px) {
+@media (min-width:1600px) {
     .tabbu-banner .jumbotron h4 {
         font-size: 2.3rem;
     }
+
+    .girl-text {
+        margin: auto 15%;
+    }
+
+    .team-list {
+        margin: auto 13%;
+    }
+
+    .scene-box {
+        background-size: cover;
+        background-position: bottom left;
+    }
+
+
 }
