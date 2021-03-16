@@ -130,7 +130,7 @@ h3 {
     .scene-box {
         background-image: url(../img/game_scenario.jpg);
         background-repeat: no-repeat;
-        background-size: auto 100%;
+        background-size: cover;
         background-position: center;
     }
 
@@ -286,7 +286,11 @@ h3 {
         color: white;
         text-align: center;
         background-color: #433953;
-        padding: 3%;
+        padding: 3% 1%;
+    }
+
+    .bottom-site .copyright-box {
+       padding: 1% 10%;
     }
 
 /**Smartphone**/
@@ -397,6 +401,10 @@ h3 {
         font-size: 1rem;
     }
 
+    .scene-box {
+        display: none;
+    }
+
     .girls-section h2, .become-patreon h2  {
         font-size: 2.5rem;
     }
@@ -405,6 +413,10 @@ h3 {
         width: 100%;
         padding: 1rem;
     }
+
+    .bottom-site .copyright-box {
+        padding: 2% 0;
+     }
 
 }
 
@@ -423,9 +435,12 @@ h3 {
     }
 
     .scene-box {
-        background-size: cover;
         background-position: bottom left;
     }
+}
 
-
+@media (min-width: 1900px) {
+    .team-list {
+        margin: auto 18%;
+    }
 }
